@@ -27,7 +27,7 @@ load("seu_obj_workshop.Rdata")
 seurat_obj <- seu_raw
 
 ###################################################################################################
-### Step1. QC
+### Step1. Quality Control
 ###################################################################################################
 # Add percentage of mitochondrial gene expression
 seurat_obj[["percent.mt"]] <- PercentageFeatureSet(seurat_obj, pattern = "^MT-")
